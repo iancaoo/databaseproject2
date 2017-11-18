@@ -310,7 +310,7 @@ void Chooseclass(){
     mysql_query(connection, "select @notif, @output;");
     res_set = mysql_store_result(connection);
     row = mysql_fetch_row( res_set );
-    cout << row[0] << row[1] << endl;
+   // cout << row[0] << row[1] << endl;
         if(row[1] == i){
         cout << "-----------------" <<"Enroll successfully!!!" << "-----------------" <<endl;
     }

@@ -2,7 +2,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `coursecheck_correctinput`(in userna
 BEGIN
 
 declare t_error int default 0;
-#declare continue handler for sqlexception set t_error=1;
+declare continue handler for sqlexception set t_error=1;
 START transaction;
 /* satisfy pre */
 IF EXISTS(
